@@ -4,8 +4,13 @@
     <meta charset="UTF-8" />
     <title>Tables</title>
     <style>
-      th {
-        font-weight: bold;
+      table {
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid #cecfd5;
+        padding: 10px 15px;
       }
     </style>
   </head>
@@ -16,10 +21,10 @@
       </caption>
       <thead>
         <tr>
-          <th scope="col">Item</th>
-          <th scope="col">Availability</th>
-          <th scope="col">Qty</th>
-          <th scope="col">Price</th>
+          <th style="font-weight: bold;" scope="col">Item</th>
+          <th style="font-weight: bold;" scope="col">Availability</th>
+          <th style="font-weight: bold;" scope="col">Qty</th>
+          <th style="font-weight: bold;" scope="col">Price</th>
         </tr>
       </thead>
 
