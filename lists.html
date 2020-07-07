@@ -8,6 +8,21 @@
   <li>CSS</li>
   <li>C#</li>
 </ol>
+
+<nav class="navigation">
+  <ul>
+    <li><a href="#">Profile</a></li>
+    <!--
+        -->
+    <li><a href="#">Settings</a></li>
+    <!--
+        -->
+    <li><a href="#">Notifications</a></li>
+    <!--
+        -->
+    <li><a href="#">Logout</a></li>
+  </ul>
+</nav>
 <p>Here is an example of a nested list:</p>
 <ul>
   <li>
@@ -34,3 +49,53 @@
 </ul>
 <p>Indentation can help show the nested structure of the elements.</p>
 <p>It can also make the code <em>much</em> easier to read!</p>
+<style>
+  .navigation ul {
+    font: bold 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+  }
+  .navigation li {
+    display: inline-block;
+  }
+  .navigation a {
+    background: #395870;
+    background: linear-gradient(#49708f, #293f50);
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    color: #fff;
+    padding: 12px 20px;
+    text-decoration: none;
+  }
+  .navigation a:hover {
+    background: #314b60;
+    box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, 0.3);
+  }
+  .navigation li:first-child a {
+    border-radius: 4px 0 0 4px;
+  }
+  .navigation li:last-child a {
+    border-right: 0;
+    border-radius: 0 4px 4px 0;
+  }
+</style>
+<p><strong>Description list</strong></p>
+<dl>
+  <dt>study</dt>
+  <dd>
+    The devotion of time and attention to acquiring knowledge on an academic
+    subject, especially by means of books
+  </dd>
+  <dt>design</dt>
+  <dd>
+    A plan or drawing produced to show the look and function or workings of a
+    building, garment, or other object before it is built or made
+  </dd>
+  <dd>
+    Purpose, planning, or intention that exists or is thought to exist behind an
+    action, fact, or material object
+  </dd>
+  <dt>business</dt>
+  <dt>work</dt>
+  <dd>A person's regular occupation, profession, or trade</dd>
+</dl>
