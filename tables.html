@@ -14,12 +14,20 @@
       }
 
       .table_striping {
-  border-collapse: separate;
+        border-collapse: separate;
   border-spacing: 0;
+  color: #4a4a4d;
+  font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .th_striping,
 .td_striping {
-  padding: 10px 15px;
+    padding: 10px 15px;
+  vertical-align: middle;
+  border: 0px;
+}
+
+.th_striping th:first-child {
+  text-align: left;
 }
 .thead_striping {
   background: #395870;
@@ -35,6 +43,28 @@
 .td_striping td:first-child {
   border-left: 1px solid #cecfd5;
 }
+
+.book-title {
+  color: #395870;
+  display: block;
+}
+.item-stock,
+.item-qty {
+  text-align: center;
+}
+.item-price {
+  text-align: right;
+}
+.item-multiple {
+  display: block;
+}
+.tfoot_striping {
+  text-align: right;
+}
+.tfoot_striping tr:last-child {
+  background: #f0f0f2;
+}
+
 
     </style>
   </head>
@@ -112,42 +142,41 @@
         </caption>
         <thead class="thead_striping">
           <tr>
-            <th class="th_striping" style="font-weight: bold;" scope="col">Item</th>
-            <th class="th_striping" style="font-weight: bold;" scope="col">Availability</th>
-            <th class="th_striping" style="font-weight: bold;" scope="col">Qty</th>
-            <th class="th_striping" style="font-weight: bold;" scope="col">Price</th>
+            <th class="th_striping"  scope="col" colspan="2">Item </th>
+            <th class="th_striping"  scope="col">Qty</th>
+            <th class="th_striping"  scope="col">Price</th>
           </tr>
         </thead>
   
         <tbody class="tbody_striping">
           <tr>
-            <td class="td_striping">Don&#8217;t Make Me Think by Steve Krug</td>
-            <td class="td_striping">In Stock</td>
-            <td class="td_striping">1</td>
-            <td class="td_striping">$30.02</td>
+            <td class="td_striping"><strong class="book-title">Don&#8217;t Make Me Think</strong> by Steve Krug</td>
+            <td class="item-stock">In Stock</td>
+            <td class="item-qty">1</td>
+            <td class="item-price">$30.02</td>
           </tr>
           <tr>
             <td class="td_striping">
-              A Project Guide to UX Design by Russ Unger &#38; Carolyn Chandler
+                <strong class="book-title">A Project Guide to UX Design</strong> by Russ Unger &#38; Carolyn Chandler
             </td class="td_striping">
-            <td class="td_striping">In Stock</td>
-            <td class="td_striping"> 2</td>
-            <td class="td_striping">$52.94 ($26.47 &#215; 2)</td>
+            <td class="item-stock">In Stock</td>
+            <td class="item-qty"> 2</td>
+            <td class="item-price">$52.94 <span class="text-offset item-multiple">$26.47 &#215; 2</span></td>
           </tr>
           <tr>
-            <td class="td_striping">Introducing HTML5 by Bruce Lawson &#38; Remy Sharp</td>
-            <td class="td_striping">Out of Stock</td>
-            <td class="td_striping">1</td>
-            <td class="td_striping">$22.23</td>
+            <td class="td_striping"><strong class="book-title">Introducing HTML5</strong> by Bruce Lawson &#38; Remy Sharp</td>
+            <td class="item-stock">Out of Stock</td>
+            <td class="item-qty">1</td>
+            <td class="item-price">$22.23</td>
           </tr>
           <tr>
-            <td class="td_striping">Bulletproof Web Design by Dan Cederholm</td>
-            <td class="td_striping">In Stock</td>
-            <td class="td_striping">1</td>
-            <td class="td_striping">$30.17</td>
+            <td class="td_striping"><strong class="book-title">Bulletproof Web Design</strong> by Dan Cederholm</td>
+            <td class="item-stock">In Stock</td>
+            <td class="item-qty">1</td>
+            <td class="item-price">$30.17</td>
           </tr>
         </tbody>
-        <tfoot>
+        <tfoot class="tfoot_striping">
           <tr>
             <td class="td_striping">Subtotal</td>
             <td class="td_striping"></td>
