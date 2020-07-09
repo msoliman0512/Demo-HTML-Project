@@ -1,0 +1,60 @@
+table {
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 1px solid #cecfd5;
+  padding: 10px 15px;
+}
+
+.table_striping {
+  border-collapse: separate;
+  border-spacing: 0;
+  color: #4a4a4d;
+  font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.th_striping,
+.td_striping {
+  padding: 10px 15px;
+  vertical-align: middle;
+  border: 0px;
+}
+
+.th_striping th:first-child {
+  text-align: left;
+}
+.thead_striping {
+  background: #395870;
+  color: #fff;
+}
+.tbody_striping tr:nth-child(even) {
+  background: #f0f0f2;
+}
+.td_striping {
+  border-bottom: 1px solid #cecfd5;
+  border-right: 1px solid #cecfd5;
+}
+.td_striping td:first-child {
+  border-left: 1px solid #cecfd5;
+}
+
+.book-title {
+  color: #395870;
+  display: block;
+}
+.item-stock,
+.item-qty {
+  text-align: center;
+}
+.item-price {
+  text-align: right;
+}
+.item-multiple {
+  display: block;
+}
+.tfoot_striping {
+  text-align: right;
+}
+.tfoot_striping tr:last-child {
+  background: #f0f0f2;
+}
