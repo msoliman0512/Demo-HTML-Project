@@ -13,6 +13,7 @@
   <body onload="message('LOAD')" onresize="message('RESIZE')">
     <h1 class="customH1">Welcome to My first responsive page</h1>
     <p id="output"></p>
+    <button type="button" onclick="displayDate()">Disply Date</button>
     <p id="test" class="customP" onclick="clickedMe('test')">
       <!-- onclick="clickedMe("test")" Doesn't work -->
       These are my notes about HTML!
@@ -25,10 +26,9 @@
     // if you don't use functions to trigger some Js code you should put your script tag after your html code to affect the DOM
     // functions should be seperated in another .js file or coded in the head tag
     var name = prompt("Enter your name: ");
-    var date = Date();
     //var location = window.location;  // Bug: infinite reloading
     // alert("Hello " + name + " :D");
-    welcomeMsg(name, date);
+    welcomeMsg(name);
     document.write("<h2> Time to learn JavaScript<h2>"); // not the best way to write something
     document.write(document.baseURI + "<br>");
     document.getElementById("test").innerHTML =
