@@ -39,7 +39,7 @@
     var date = Date();
     //var location = window.location;  // Bug: infinite reloading
     // alert("Hello " + name + " :D");
-    alert("Hello " + name + " :D" + ", today is " + date);
+    welcomeMsg(name, date);
     document.write("<h2> Time to learn JavaScript<h2>"); // not the best way to write something
     document.write(document.baseURI + "<br>");
     document.getElementById("test").innerHTML =
@@ -86,5 +86,9 @@
     // → user
     console.log("Agnes" || "user");
     // → Agnes
+
+    function welcomeMsg(name, date) {
+      alert("Hello " + name + " :D" + ", today is " + date);
+    }
   </script>
 </html>
