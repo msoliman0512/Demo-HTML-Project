@@ -10,13 +10,16 @@
     <meta charset="UTF-8" />
     <title>Js Demo draft html file</title>
   </head>
-  <body>
+  <body onload="message('LOAD')" onresize="message('RESIZE')">
     <h1 class="customH1">Welcome to My first responsive page</h1>
+    <p id="output"></p>
     <p id="test" class="customP" onclick="clickedMe('test')">
       <!-- onclick="clickedMe("test")" Doesn't work -->
       These are my notes about HTML!
     </p>
-    <p id="test" class="customP">These are my notes about HTML!</p>
+    <p id="test" class="customP" onclick="message('2nd p CLICKED')">
+      These are my notes about HTML!
+    </p>
   </body>
   <script>
     // if you don't use functions to trigger some Js code you should put your script tag after your html code to affect the DOM
