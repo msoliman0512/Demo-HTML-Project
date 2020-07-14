@@ -1,0 +1,17 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.customP {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: bold 16pt Consolas, "Courier New", Courier, monospace;
+  border: 2px solid green;
+  width: 100%;
+  height: 100%;
+}
+.customH1 {
+  font: italic 28pt Impact, "Franklin Gothic Bold", "Arial Black", sans-serif;
+}
