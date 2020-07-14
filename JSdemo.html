@@ -6,16 +6,21 @@
       href="https://fonts.googleapis.com/css?family=Tangerine"
     />
     <link rel="stylesheet" href="JSdemo-style.css" />
+    <script src="JSdemo-functions.js"></script>
     <meta charset="UTF-8" />
     <title>Js Demo draft html file</title>
   </head>
   <body>
     <h1 class="customH1">Welcome to My first responsive page</h1>
-    <p id="test" class="customP">These are my notes about HTML!</p>
+    <p id="test" class="customP" onclick="clickedMe('test')">
+      <!-- onclick="clickedMe("test")" Doesn't work -->
+      These are my notes about HTML!
+    </p>
     <p id="test" class="customP">These are my notes about HTML!</p>
   </body>
   <script>
     // if you don't use functions to trigger some Js code you should put your script tag after your html code to affect the DOM
+    // functions should be seperated in another .js file or coded in the head tag
     var name = prompt("Enter your name: ");
     var date = Date();
     //var location = window.location;  // Bug: infinite reloading
@@ -67,9 +72,5 @@
     // → user
     console.log("Agnes" || "user");
     // → Agnes
-
-    function welcomeMsg(name, date) {
-      alert("Hello " + name + " :D" + ", today is " + date);
-    }
   </script>
 </html>
