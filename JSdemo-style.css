@@ -15,3 +15,9 @@ body {
 .customH1 {
   font: italic 28pt Impact, "Franklin Gothic Bold", "Arial Black", sans-serif;
 }
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
