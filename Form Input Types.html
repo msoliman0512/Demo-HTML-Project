@@ -7,6 +7,9 @@
       label {
         display: block;
       }
+      div {
+        display: none;
+      }
     </style>
     <script>
       function check() {
@@ -16,6 +19,16 @@
           alert("The two passwords must match!!");
           document.getElementById("password").value = "";
           document.getElementById("password_repeat").value = "";
+        }
+      }
+
+      function nicknameFunction() {
+        if (document.getElementById("yesNick").checked) {
+          document.getElementById("nick").style.display = "inline";
+          document.getElementById("nickname").setAttribute("required", true);
+        } else {
+          document.getElementById("nickname").removeAttribute("required");
+          document.getElementById("nick").style.display = "none";
         }
       }
     </script>
@@ -28,6 +41,19 @@
           >Name:
           <input type="text" id="name" name="name" placeholder="Jhon Smith"
         /></label>
+
+        <label for="yesNick">Nickname?:</label>
+        <input
+          type="checkbox"
+          id="yesNick"
+          name="yesNick"
+          value="yes"
+          onchange="nicknameFunction()"
+        />
+        <div id="nick">
+          <label for="nickname">Nickname:</label>
+          <input id="nickname" name="nickname" type="text" /><br />
+        </div>
 
         <label
           >Email: <input type="email" name="email" placeholder="me@me.com" />
