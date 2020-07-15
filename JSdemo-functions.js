@@ -26,3 +26,6 @@ function hideDate() {
   //option 2: change the class
   x.className = "hide"; // more convenient
 }
+function displayId(element) {
+  alert("You clicked a button with an Id of : " + element.id);
+}
